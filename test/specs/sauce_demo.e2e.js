@@ -1,11 +1,11 @@
-
+'use strict';
 const assert = require("assert");
-const SauceDemo = require("../pageobjects/sauce_demo.page");
+const SauceDemo = require('sauce-po');
 
 describe("Login Test", () => {
   it("Verify Title", async () => {
     await browser.url(
-      "https://www.saucedemo.com/"
+      "/"
     );
     await browser.maximizeWindow();
 

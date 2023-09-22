@@ -1,3 +1,4 @@
+'use strict';
 class SauceDemo {
     /**
      * define selectors using getter methods
