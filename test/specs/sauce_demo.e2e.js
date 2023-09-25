@@ -1,6 +1,7 @@
 'use strict';
 const assert = require("assert");
 const SauceDemo = require('sauce-po');
+const Actions = require('common-actions')
 
 describe("Login Test", () => {
   it("Verify Title", async () => {
