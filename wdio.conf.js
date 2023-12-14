@@ -6,7 +6,7 @@ exports.config = {
 
     runner: 'local',
 
-    specs: ["./test/specs/sauce_demo.e2e.js"],
+    specs: ["./test/specs/lorry_test.e2e.js"],
     
     exclude: [],
     

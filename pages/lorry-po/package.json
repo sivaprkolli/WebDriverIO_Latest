@@ -1,0 +1,7 @@
+{
+    "name": "lorry-po",
+    "version": "0.1.1",
+    "description": "Lorry Page object",
+    "main": "lorry_page.js",
+    "dependencies": {}
+}
