@@ -1,0 +1,7 @@
+{
+    "name": "learning-po",
+    "version": "0.1.1",
+    "description": "learning Demo page object",
+    "main": "learning_page.js",
+    "dependencies": {}
+}
