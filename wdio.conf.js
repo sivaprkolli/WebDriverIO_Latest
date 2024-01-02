@@ -7,10 +7,10 @@ exports.config = {
     runner: 'local',
 
     suites: {
-        smoke: ['./test/specs/multiple_elements_e2e.js'],
+        smoke: ['./test/specs/lorry_test.e2e.js'],
     },
 
-    specs: ["./test/specs/multiple_elements_e2e.js"],
+    specs: ["./test/specs/lorry_test.e2e.js"],
 
     exclude: [],
 
@@ -25,7 +25,7 @@ exports.config = {
 
     bail: 0,
 
-    baseUrl: "https://www.saucedemo.com",
+    baseUrl: "https://onboarding.qa.trukker.com",
 
     waitforTimeout: 10000,
 
@@ -39,7 +39,7 @@ exports.config = {
 
     mochaOpts: {
         ui: 'bdd',
-        timeout: 60000
+        timeout: 600000
     },
 
     afterTest: async function (test, context, { error, result, duration, passed, retries }) {

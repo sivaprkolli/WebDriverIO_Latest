@@ -16,10 +16,8 @@ describe("Get Multple Elements Text", async()=>{
 
             for(let i=0; i<await menus.length; i++){
                 console.log(await menus[i].getText())
-
                 if(await menus[i].getText() == "Locations"){
                     await menus[i].click();
-
                 }
             }
 

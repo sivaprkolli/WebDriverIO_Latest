@@ -25,6 +25,7 @@ class LorryPage {
 
   async login(username, password) {
     await Actions.type_value(this.username_inputbox, username);
+    
     await Actions.type_value(this.password_inputbox, password);
     await Actions.click_element(this.submit_button);
     await browser.pause(10000);
@@ -33,6 +34,31 @@ class LorryPage {
 
   async openMenu(menuName){
       await Actions.openLeftHandMenu(".icon + span", menuName)
+  }
+
+  async openSubMenu(submenu){
+    await Actions.openLeftHandMenu("span > [href='#/inquiry/add'] > span > span", submenu)
+  }
+
+  async openTrucksList(listName){
+    await Actions.openLeftHandMenu("//label[text()='Pricing Unit']/../following-sibling::div/descendant::span[@class='ant-select-selection-search']/input", listName)
+  }
+
+  async openTrucksListItem(listNameItem){
+    await Actions.openLeftHandMenu(".ant-select-item-option-content", listNameItem)
+  }
+
+  async selectDate(month, year, date){
+    await Actions.clickForElementIntercept("//button[text()='"+month+"']/following-sibling::button[text()='"+year+"']/ancestor::div[@class='ant-picker-header']/following-sibling::div/table/tbody/tr/td[not(contains(@class,'disabled'))]/div[text()='"+date+"']");
+    await browser.pause(3000);
+    await Actions.clickForElementIntercept("//span[text()='OK']");
+  }
+
+////label[@title='Pricing Unit']/../../descendant::span[@title='Trucks']
+  async openTruckList(){
+    await Actions.click_element($("//label[text()='Pricing Unit']/../following-sibling::div/descendant::span[@class='ant-select-arrow']"));
+    await browser.pause(5000);
+    await Actions.clickForElementIntercept("//label[text()='Pricing Unit']/../following-sibling::div/descendant::span[@class='ant-select-arrow']");
   }
 
   async openLHM() {

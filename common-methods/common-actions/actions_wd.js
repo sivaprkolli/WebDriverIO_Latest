@@ -20,6 +20,15 @@ class Actions {
         });
       }
 
+      async clickForElementIntercept(locator) {
+        let list_menus = $$(locator);
+        await list_menus.forEach(async (element) => {
+          await browser.pause(2000);
+           await browser.execute(this.clickAction, element);
+        });
+      }
+
+
       clickAction = async function(argument) { 
         await argument.click();
        };
