@@ -25,7 +25,7 @@ exports.config = {
 
     bail: 0,
 
-    baseUrl: "https://onboarding.qa.trukker.com",
+    baseUrl: "",
 
     waitforTimeout: 10000,
 

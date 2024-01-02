@@ -12,7 +12,7 @@ describe("Login Test", async() => {
     await browser.maximizeWindow();
 
     const title = await browser.getTitle();
-    await LorryPage.login("test1@trukker.com","trukker@123");
+    await LorryPage.login("hello@yop.com","hello@qbc");
     await browser.pause(5000)
     await LorryPage.openMenu("Inquiries");
     await LorryPage.openSubMenu("Create Inquiry");
