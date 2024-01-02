@@ -17,11 +17,14 @@
     "@wdio/mocha-framework": "^8.16.12",
     "@wdio/spec-reporter": "^8.16.12",
     "common-actions": "./common-methods/common-actions/",
+    "learning-po": "./pages/learning-po/",
     "lorry-po": "./pages/lorry-po/",
-    "sauce-po": "./pages/sauce-po/",
-    "learning-po":"./pages/learning-po/"
+    "sauce-po": "./pages/sauce-po/"
   },
   "dependencies": {
-    "npm": "^10.2.5"
+    "jimp": "^0.22.10",
+    "jsqr": "^1.4.0",
+    "npm": "^10.2.5",
+    "qrcode-reader": "^1.0.4"
   }
 }

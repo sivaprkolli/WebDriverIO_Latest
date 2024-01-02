@@ -1,0 +1,20 @@
+{
+  "name": "mfa",
+  "version": "1.0.0",
+  "description": "",
+  "main": "mfa_test.e2e.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@zxing/library": "^0.20.0",
+    "canvas": "^2.11.2",
+    "jsqr": "^1.4.0",
+    "qrcode-reader": "^1.0.4",
+    "tesseract.js": "^5.0.4",
+    "totp-generator": "^0.0.14"
+  }
+}
