@@ -10,7 +10,7 @@ exports.config = {
         smoke: ['./test/specs/lorry_test.e2e.js'],
     },
 
-    specs: ["./test/specs/lorry_test.e2e.js"],
+    specs: ["./test/specs/sauce_demo.e2e.js"],
 
     exclude: [],
 
@@ -25,7 +25,7 @@ exports.config = {
 
     bail: 0,
 
-    baseUrl: "",
+    baseUrl: "https://www.saucedemo.com/",
 
     waitforTimeout: 10000,
 
@@ -46,6 +46,6 @@ exports.config = {
         if (!passed) {
             await browser.takeScreenshot();
         }
-        await browser.closeWindow();
+       // await browser.closeWindow();
     },
 }
