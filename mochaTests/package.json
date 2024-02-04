@@ -1,0 +1,16 @@
+{
+  "name": "mochatests",
+  "version": "1.0.0",
+  "description": "",
+  "main": "firstSpec.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "smoke": "mocha  firstSpec.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chai": "^5.0.3",
+    "mocha": "^10.2.0"
+  }
+}

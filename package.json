@@ -6,6 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "wdio": "wdio run ./wdio.conf.js",
+    "wdioReport": "wdio run ./wdio_test.config.js",
+    "wdioReport1": "wdio run ./wdio_test.config.js --reporter mocha-simple-html-reporter --reporter-options output=report.html",
     "smoke": "wdio run ./wdio.conf.js --suite smoke"
   },
   "author": "",
@@ -22,9 +24,18 @@
     "sauce-po": "./pages/sauce-po/"
   },
   "dependencies": {
+    "@rpii/wdio-html-reporter": "^7.7.1",
+    "@rpii/wdio-html-reporter-pdf": "^8.0.0",
+    "chai": "^5.0.3",
+    "fs": "^0.0.1-security",
     "jimp": "^0.22.10",
     "jsqr": "^1.4.0",
+    "mocha": "^10.2.0",
+    "mocha-simple-html-reporter": "^2.0.0",
     "npm": "^10.2.5",
-    "qrcode-reader": "^1.0.4"
+    "qrcode-reader": "^1.0.4",
+    "wdio-html-nice-reporter": "^8.1.4",
+    "wdio-timeline-reporter": "^5.1.4",
+    "wdio-video-reporter": "^5.1.4"
   }
 }

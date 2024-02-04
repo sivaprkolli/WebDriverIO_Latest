@@ -7,17 +7,17 @@ exports.config = {
     runner: 'local',
 
     suites: {
-        smoke: ['./test/specs/lorry_test.e2e.js'],
+        smoke: ['./test/specs/sauce_demo.e2e.js'],
     },
 
-    specs: ["./test/specs/sauce_demo.e2e.js"],
+    specs: ["./test/specs/sauce_test.e2e.js"],
 
     exclude: [],
 
     maxInstances: 10,
 
     capabilities: [{
-        browserName: 'chrome'
+        browserName: 'firefox'
     }],
 
 
