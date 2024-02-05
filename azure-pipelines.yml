@@ -7,7 +7,7 @@ trigger:
 - testLorry
 
 pool:
-  vmImage: windows
+  vmImage: windows-2022
 
 steps:
 - task: NodeTool@0
