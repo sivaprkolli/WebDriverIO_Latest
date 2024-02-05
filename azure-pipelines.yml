@@ -18,4 +18,10 @@ steps:
 - script: |
     npm install
     npm run wdio
+    cat report.xml
   displayName: 'npm install and build'
+
+- tasks: PublishResults@2
+  inputs:
+    testResultsFormat: 'JUnit'
+    testResultFiles: '*.xml'
