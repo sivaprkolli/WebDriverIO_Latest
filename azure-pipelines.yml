@@ -20,7 +20,7 @@ steps:
     npm run wdio
   displayName: 'npm install and build'
 
-- tasks: PublishResults@2
+- task: PublishResults@2
   inputs:
     testResultsFormat: 'JUnit'
     testResultFiles: '*.xml'
