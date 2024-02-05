@@ -21,7 +21,12 @@ steps:
     cat report.xml
   displayName: 'npm install and build'
 
-- task: PublishResults@2
+- task: PublishTestResults@2
   inputs:
     testResultsFormat: 'JUnit'
-    testResultFiles: '*.xml'
+    testResultsFiles: '**/TEST-*.xml'
+
+- task: AllureGenerate@1
+  inputs:
+    resultsDir: 'allure-results'
+    targetDir: 'allure-report/$(Build.BuildNumber)'
