@@ -19,15 +19,15 @@ steps:
     npm install
     npm run wdio
   displayName: 'npm install and build'
+  continueOnError: true
 
 - task: PublishTestResults@2
   inputs:
     testResultsFormat: 'JUnit'
     testResultsFiles: '**/TEST-*.xml'
-    continueOnError: true
 
 - task: AllureGenerate@1
   inputs:
     resultsDir: 'allure-results'
     targetDir: 'allure-report/$(Build.BuildNumber)'
-    continueOnError: true
+
