@@ -7,7 +7,7 @@ trigger:
 - testLorry
 
 pool:
-  vmImage: ubuntu-latest
+  vmImage: windows
 
 steps:
 - task: NodeTool@0
