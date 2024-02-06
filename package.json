@@ -24,13 +24,16 @@
     "sauce-po": "./pages/sauce-po/"
   },
   "dependencies": {
+    "@gmangiapelo/wdio-azure-devops-service": "^0.0.11",
     "@rpii/wdio-html-reporter": "^7.7.1",
     "@rpii/wdio-html-reporter-pdf": "^8.0.0",
+    "@wdio/junit-reporter": "^8.29.1",
     "chai": "^5.0.3",
     "fs": "^0.0.1-security",
     "jimp": "^0.22.10",
     "jsqr": "^1.4.0",
     "mocha": "^10.2.0",
+    "mocha-junit-reporter": "^2.2.1",
     "mocha-simple-html-reporter": "^2.0.0",
     "npm": "^10.2.5",
     "qrcode-reader": "^1.0.4",

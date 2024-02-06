@@ -37,6 +37,16 @@ exports.config = {
 
     reporters: ['spec', ['allure', { outputDir: 'allure-results' }]],
 
+    reporters: [
+        'spec',
+        ['junit', {
+            outputDir: './',
+            outputFileFormat: function(options) { // optional
+                return `results-${options.cid}.${options.capabilities}.xml`
+            }
+        }]
+    ],
+
     mochaOpts: {
         ui: 'bdd',
         timeout: 600000

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites tests="2" failures="0" errors="0" skipped="0">
+  <testsuite name="Login Test" timestamp="2024-02-06T08:04:14" time="1.805" tests="2" failures="0" errors="0" skipped="0">
+    <properties>
+      <property name="specId" value="0"/>
+      <property name="suiteName" value="Login Test"/>
+      <property name="capabilities" value="firefox.120_0_1.mac"/>
+      <property name="file" value="file://./test/specs/sauce_test.e2e.js"/>
+    </properties>
+    <testcase classname="firefox.120_0_1.mac.Login_Test" name="Verify Title" time="1.343">
+      <system-out><![CDATA[
+COMMAND: POST /session/a81b17c0-0c0f-47b2-8e5a-298d865e4933/url - {"url":"https://www.saucedemo.com/"}
+RESULT: {"url":"https://www.saucedemo.com/"}
+COMMAND: POST /session/a81b17c0-0c0f-47b2-8e5a-298d865e4933/window/maximize - {}
+RESULT: {}
+COMMAND: GET /session/a81b17c0-0c0f-47b2-8e5a-298d865e4933/title - {}
+RESULT: {}
+]]></system-out>
+    </testcase>
+    <testcase classname="firefox.120_0_1.mac.Login_Test" name="Verify login with valid credentails" time="0.46">
+      <system-out><![CDATA[
+COMMAND: POST /session/a81b17c0-0c0f-47b2-8e5a-298d865e4933/element - {"using":"css selector","value":"#user-name"}
+RESULT: {"using":"css selector","value":"#user-name"}
+COMMAND: POST /session/a81b17c0-0c0f-47b2-8e5a-298d865e4933/element/8131b71b-d355-4cc9-b25b-7be5360899d8/clear - {}
+RESULT: {}
+COMMAND: POST /session/a81b17c0-0c0f-47b2-8e5a-298d865e4933/element/8131b71b-d355-4cc9-b25b-7be5360899d8/value - {"text":"standard_user"}
+RESULT: {"text":"standard_user"}
+COMMAND: POST /session/a81b17c0-0c0f-47b2-8e5a-298d865e4933/element - {"using":"css selector","value":"#password"}
+RESULT: {"using":"css selector","value":"#password"}
+COMMAND: POST /session/a81b17c0-0c0f-47b2-8e5a-298d865e4933/element/e162b821-6b97-4bb0-9b34-2eceee2d8093/clear - {}
+RESULT: {}
+COMMAND: POST /session/a81b17c0-0c0f-47b2-8e5a-298d865e4933/element/e162b821-6b97-4bb0-9b34-2eceee2d8093/value - {"text":"secret_sauce"}
+RESULT: {"text":"secret_sauce"}
+COMMAND: POST /session/a81b17c0-0c0f-47b2-8e5a-298d865e4933/element - {"using":"css selector","value":".submit-button.btn_action"}
+RESULT: {"using":"css selector","value":".submit-button.btn_action"}
+COMMAND: POST /session/a81b17c0-0c0f-47b2-8e5a-298d865e4933/element/c19cff3c-99f3-4b49-8446-a79bbfcc9b18/click - {}
+RESULT: {}
+COMMAND: DELETE /session/a81b17c0-0c0f-47b2-8e5a-298d865e4933 - {}
+RESULT: {}
+]]></system-out>
+    </testcase>
+  </testsuite>
+</testsuites>
