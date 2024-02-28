@@ -69,7 +69,7 @@ describe("Login Test", async() => {
 
   xit("Verify login with valid credentails", async () => {
  
-    await LorryPage.login("test1@trukker.com","trukker@123");
+    await LorryPage.login("test1@yop.com","test@123");
     //await LorryPage.openLHM();
     await LorryPage.openMenu("Shipper");
   
